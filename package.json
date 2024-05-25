@@ -1,8 +1,8 @@
 {
-  "name": "vladik-ystal-rabotat",
+  "name": "tsorfoks.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
