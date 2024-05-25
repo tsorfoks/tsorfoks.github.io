@@ -37,7 +37,11 @@ function generateCallTimes(start: string, end: string, interval: number) {
   return times;
 }
 
-function generateCallTimesOvernight(start: string, end: string, interval: number) {
+function generateCallTimesOvernight(
+  start: string,
+  end: string,
+  interval: number
+) {
   const times = [];
   let current = start;
 
@@ -110,18 +114,19 @@ function generateGroupCallTimes() {
   return allTimes;
 }
 
+interface Res {
+  nameGroup: string;
+  time: string[];
+}
 
 export function assignTimesToGroups(groups: string[]) {
-  const result: any  = {};
-
+  const result: Res[] = [];
   groups.forEach((group) => {
-    result[group] = generateGroupCallTimes();
+    if (group !== '') {
+      const t = generateGroupCallTimes();
+      result.push({ nameGroup: group, time: t });
+    }
   });
 
   return result;
 }
-
-// const groups = ['Иванов', 'Смирнов', 'Соболев'];
-// export const groupCallTimes = assignTimesToGroups(groups);
-// // module.exports = 
-// console.log(groupCallTimes);
