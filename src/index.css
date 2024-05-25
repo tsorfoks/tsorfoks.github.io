@@ -23,7 +23,7 @@ body {
 body {
   margin: 0;
   place-items: center;
-  background-color: #a3b0cb;
+  /* background-color: #a3b0cb; */
   min-height: 100vh;
 }
 

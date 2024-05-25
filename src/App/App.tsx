@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { assignTimesToGroups } from './functions';
-import deleteIcon from '../../public/icons8-отмена.svg';
+import deleteIcon from '../../public/delete.png';
 import deleteResult from '../../public/icons8-чистить.png';
 
 interface Res {

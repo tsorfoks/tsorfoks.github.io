@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/tsorfoks/tsorfoks.github.io/issues"
   },
-  "homepage": "https://github.com/tsorfoks/tsorfoks.github.io#readme",
+  "homepage": "./index.html",
   "eslintConfig": {
     "extends": [
       "react-app",
