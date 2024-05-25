@@ -20,7 +20,6 @@ function App() {
   };
 
   const handleButtonClick = () => {
-    const names = groupNames.filter((el) => el !== '');
     const output = assignTimesToGroups(groupNames);
     setResult(output);
   };
